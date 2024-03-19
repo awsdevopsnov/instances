@@ -16,3 +16,11 @@ resource "aws_instance" "Ec2_instance" {
   instance_type = "t2.micro"
 }
 
+resource "aws_s3_bucket" "SPACEBUCKET" {
+  bucket = "my-tf-test-bucket"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
