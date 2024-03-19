@@ -9,7 +9,7 @@ terraform {
 
 provider "aws" {
   region  = "us-east-1"
-  version = "~> 5.6"
+  version = "5.6.0"
 }
 
 resource "aws_instance" "Ec2_instance" {
